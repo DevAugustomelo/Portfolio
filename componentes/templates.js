@@ -29,24 +29,24 @@ class MenuLateral extends HTMLElement {
   </section>
 
   <nav id="nav-bar" class="nav-menu">
-    <ul class="nav flex-column">
-      <li class="nav-item">
+    <ul class="nav flex-column" >
+      <li class="nav-item" >
         <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/index.html" target="_blank"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
+        <a class="nav-link active" href="/index.html" target="_blank"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="bi bi-list-check" aria-hidden="true"></i> Habilidades</a>
+        <a class="nav-link active" href="#"><i class="bi bi-list-check" aria-hidden="true"></i> Habilidades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
+        <a class="nav-link active" href="#"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
+        <a class="nav-link active" href="#"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
+        <a class="nav-link active" href="#"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
       </li>
     </ul>
   </nav>

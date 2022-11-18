@@ -87,7 +87,7 @@ html, body {
 
 
 .nav-menu a,
-.nav-menu a:focus {
+  .nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -105,7 +105,6 @@ html, body {
 
 
 .nav-menu a:hover,
-.nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   text-decoration: none;
@@ -114,7 +113,6 @@ html, body {
 
 
 .nav-menu a:hover i,
-.nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i{
   color: #F25C23;

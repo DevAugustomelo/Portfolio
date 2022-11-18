@@ -36,6 +36,7 @@ section#home span#subtitle {
 
 section#home div#deslize {
     width: 9rem;
+    text-shadow: 1px 1px 1px #000000;
 
 }
 
@@ -43,4 +44,9 @@ section#home div#deslize a {
     text-decoration: none;
     color: #fff;
     
+}
+
+section#home div#deslize a:hover  {
+    filter: drop-shadow(0px 0px 1px#fce40c);
+
 }

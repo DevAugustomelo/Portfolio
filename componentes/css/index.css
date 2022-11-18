@@ -138,8 +138,18 @@ i.menu-mobile {
   display: none;
   justify-content: center;
   align-items: center;
-
+  
 }
+
+
+.nav-menu-active {
+  overflow: hidden;
+}
+
+.nav-menu-active #header {
+  left: 0;
+}
+
 
 @media (max-width: 1024px) {
   #header {
@@ -150,22 +160,21 @@ i.menu-mobile {
     display: flex;
   }
 
+  section#home h2 {
+    font-size: 3.5rem;
+    
+  }
+
+  section#home span#subtitle {
+    margin-right: 0;
+    font-size: 0.9rem;
+  }
+
+  #main{
+    margin-left: 0;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -177,6 +186,7 @@ i.menu-mobile {
     height: 150px;
     color: #fff;
     background: linear-gradient(#021124, #212b46);
+    border-top: 2px solid #fce40c;
     
   }
 

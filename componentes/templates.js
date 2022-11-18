@@ -81,3 +81,4 @@ class Footer extends HTMLElement {
 
 customElements.define('menu-lateral', MenuLateral);
 customElements.define('nav-footer', Footer);
+

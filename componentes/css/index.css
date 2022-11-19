@@ -79,6 +79,7 @@ html, body {
 
 .nav-menu {
   padding: 1.5rem;
+  animation: slideBottom 2s;
 
 }
 
@@ -147,6 +148,17 @@ i.menu-mobile {
 
 .nav-menu-active #header {
   left: 0;
+}
+
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(90px)
+  
+  }to {
+    transform: translateY(0px);
+  }
+  
 }
 
 

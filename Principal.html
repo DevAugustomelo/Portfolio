@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/componentes/imgs/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!-- bootstrap -->
     <link
@@ -45,14 +47,14 @@
 
       <section id="home" class="row m-0 p-0">
         <div class="col-md-12 d-flex justify-content-center align-items-center flex-column">
-          <h2 class="text-white text-shadow">José Augusto de Melo</h2>
-          <span id="subtitle" class="text-white text-shadow">Desenvolvedor de Software, Estudante de Análise e Desenvolvimento de Sistemas.</span>
+          <h2 class="text-white text-shadow" data-aos="zoom-in" data-aos-duration="3000">José Augusto de Melo</h2>
+          <span id="subtitle" class="text-white text-shadow" data-aos="zoom-out" data-aos-duration="3000">Desenvolvedor de Software, Estudante de Análise e Desenvolvimento de Sistemas.</span>
         </div>
 
         <div class="col-md-0 d-flex justify-content-end align-items-end">
           <div id="deslize" class="d-flex align-items-center">          
             <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-            <a href="">Deslize para baixo</a>
+            <a href="#sobre">Deslize para baixo</a>
 
           </div>
         </div>
@@ -60,11 +62,11 @@
       </section>
 
 
-      <section id="sobre" class="container mt-5">
+      <section id="sobre" class="container mt-5" >
         <div class="row-100">
           <div class="col-md-12">
-            <h2 class="pt-3">Sobre mim</h2>
-            <p>Nascido em 1986, natural de Recife-PE. Comecei minha trajetória profissional em 2005 aos 19 anos, adquirindo experiências em grandes multinacionais, tenho facilidade em aprender e capacidade de adaptação.
+            <h2 class="pt-3" data-aos="fade-right" data-aos-duration="1500">Sobre mim</h2>
+            <p data-aos="fade-left" data-aos-duration="3000">Nascido em 1986, natural de Recife-PE. Comecei minha trajetória profissional em 2005 aos 19 anos, adquirindo experiências em grandes multinacionais, tenho facilidade em aprender e capacidade de adaptação.
 
               Sou Dinâmico de bom relacionamento interpessoal, comunicativo e criativo. 
               <br><br>
@@ -74,12 +76,15 @@
           </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-4" >
           <div class="col-md-4">
-            <img  class="img-fluid shadow p-3 mb-5 rounded" src="./componentes/imgs/foto-perfil.jpeg" alt="foto-perfil">
+            <img  class="img-fluid shadow p-3 mb-5 rounded" src="./componentes/imgs/foto-perfil.jpeg" alt="foto-perfil" 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-8" data-aos="fade-up" data-aos-duration="1500">
             <h3>Monitor de Introdução a Programação</h3>
             <p>Atualmente sou monitor bolsista na matéria de Introdução a programação no IFPE 
               para alunos do primeiro período.</p>
@@ -132,7 +137,10 @@
     <script src="/script.js"></script>
 
    
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 

@@ -37,7 +37,7 @@ class MenuLateral extends HTMLElement {
         <a class="nav-link active" href="#sobre" target="_blank"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#formacao"><i class="bi bi-list-check" aria-hidden="true"></i> Habilidades</a>
+        <a class="nav-link active" href="#formacao"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>

@@ -1,0 +1,49 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+.formacao-title {
+    font-weight: 700;
+    margin:20px 0px;
+    color: #050d18;
+}
+
+.formacao-box {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #F25C23;
+    position: relative;
+}
+
+.formacao-box h4 {
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1C1E21;
+    margin-bottom: 20px;
+}
+
+.formacao-box h5 {
+    background-color: #e4edff;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+
+.formacao-box::before {
+    content: '';
+    top:0;
+    left: -9px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #F25C23;
+    border-radius: 50%;
+    background: #fff;
+}

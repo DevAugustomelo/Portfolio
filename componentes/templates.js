@@ -34,7 +34,7 @@ class MenuLateral extends HTMLElement {
         <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#sobre" target="_blank"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
+        <a class="nav-link active" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#formacao"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>

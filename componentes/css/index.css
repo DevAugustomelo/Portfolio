@@ -253,3 +253,8 @@ i.menu-mobile {
     transition: 0.3s;
     /* overflow-y: auto; */
   }
+
+
+  #link-site{
+    font-size: 15px;
+  }

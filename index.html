@@ -358,12 +358,12 @@
             <div class="col-md-5">
               <div class="card p-5 shadow border-0">
                 <div class="endereco">
-                  <h4><i class="bi bi-geo-alt"></i>Localização:</h4>
+                  <h4><i class="bi bi-geo-alt"></i>  Localização:</h4>
                   <p>Paulista-PE</p>
                 </div>
 
                 <div class="email">
-                  <h4><i class="bi bi-envelope"></i>E-mail:</h4>
+                  <h4><i class="bi bi-envelope"></i>  E-mail:</h4>
                   <p>guga7msn@hotmail.com</p>
                 </div>
 
@@ -377,10 +377,29 @@
 
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-7 mt-5 mt-md-0">
               <div class="card p-5 h-100 shadow border-0"> 
 
-                
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea  id="mensagem" rows="10" type="text" class="form-control" name="mensagem"
+                     placeholder="Digite aqui seu email..."></textarea>
+                  </div>
+                 
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                </form>
 
               </div>
             </div>

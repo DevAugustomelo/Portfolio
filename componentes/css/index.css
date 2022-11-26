@@ -89,8 +89,8 @@ a {
 }
 
 
-.nav-menu a,
-  .nav-menu a:focus {
+.nav-link,
+  .nav-link:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -107,21 +107,14 @@ a {
 }
 
 
-.nav-menu a:hover,
-/* .nav-menu .active */
-.nav-menu .active:focus,
-.nav-menu li:hover > a 
-{
+.nav-link:hover, .active {
   text-decoration: none;
   color: #fff;
 }
 
 
-.nav-menu a:hover i,
-/* .nav-menu .active i */
-.nav-menu .active:focus i,
-.nav-menu li:hover > a i
-{
+.nav-item:hover i,
+.nav-item .active i {
   color: #F25C23;
   filter: drop-shadow(0px 0px 8px#fff27f);
 }

@@ -29,24 +29,25 @@ class MenuLateral extends HTMLElement {
   </section>
 
   <nav id="nav-bar" class="nav-menu">
-    <ul class="nav flex-column" >
+    <ul id="selected" class="nav flex-column" >
+    
       <li class="nav-item" >
-        <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
+        <a class="nav-link" aria-current="page" href="#home" onclick="active(this);"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
+        <a class="nav-link" href="#sobre" onclick="active(this);"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#formacao"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>
+        <a class="nav-link" href="#formacao" onclick="active(this);"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
+        <a class="nav-link" href="#curriculo" onclick="active(this);"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
+        <a class="nav-link" href="#portfolio" onclick="active(this);"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
+        <a class="nav-link" href="#contato" onclick="active(this);"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
       </li>
     </ul>
   </nav>

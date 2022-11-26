@@ -14,6 +14,10 @@ html, body {
     background-color: #F1F3F4;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 #header {
   position: fixed;

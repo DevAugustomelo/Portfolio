@@ -107,14 +107,15 @@ a {
 }
 
 
-.nav-link:hover, .active {
+.nav-menu a:hover, 
+.nav-menu .active a {
   text-decoration: none;
   color: #fff;
 }
 
 
-.nav-item:hover i,
-.nav-item .active i {
+.nav-menu i:hover,
+.nav-menu .active i {
   color: #F25C23;
   filter: drop-shadow(0px 0px 8px#fff27f);
 }
@@ -124,7 +125,7 @@ i.menu-mobile {
   position: fixed;
   color: #fff;
   background-color: #021124;
-  right: 1rem;
+  right: 3rem;
   top: 1rem;
   font-size: 1.5rem;
   border: 1px solid #fce40c;

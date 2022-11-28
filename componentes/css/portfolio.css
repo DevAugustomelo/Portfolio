@@ -4,14 +4,35 @@
 
 
 
+/* tecnologias */
+
+/* .tec-card {
+    position: relative;
+    height: 600px;
+}
+
+.tec-img img {
+    margin-left: 4em;
+    width: 300px;
+    height: 300px;
+
+
+
+} */
+
+
+
+
+/* Portfolio */
+
 .carousel-control-prev {
-    margin-left: -6.8rem;
+    margin-left: -7rem;
 }
 
 
 
 .carousel-control-next {
-    margin-right: -6.8rem;
+    margin-right: -7rem;
 }
 
 .carousel-indicators {
@@ -32,5 +53,10 @@
         margin-right: 0;
     }
 
+    .video {
+        width: 80%;
+    }
+
 
 }
+

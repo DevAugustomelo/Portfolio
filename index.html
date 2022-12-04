@@ -408,7 +408,7 @@
             <div class="col-md-7 mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
               <div class="card p-5 h-100 shadow border-0"> 
 
-                <form class="row g-3">
+                <form class="row g-3" name="form">
                   <div class="col-md-6">
                     <label for="nome" class="form-label">Nome:</label>
                     <input type="text" class="form-control" id="nome" name="nome">
@@ -420,12 +420,16 @@
                   
                   <div class="col-12">
                     <label for="mensagem" class="form-label">Mensagem:</label>
-                    <textarea  id="mensagem" rows="10" type="text" class="form-control" name="mensagem"
-                     placeholder="Digite aqui sua mensagem..."></textarea>
+                    <textarea  id="mensagem" cols="30" rows="10" type="text" class="form-control" maxlength="200" 
+                    name="mensagem" oninput="contaTexto()"
+                    placeholder="Digite aqui sua mensagem..."></textarea>
                   </div>
-                 
+                  
+                  <div>
+                    <label for="texto">Entrada máxima 200: </label> <span id="texto"></span>
+                  </div>
                   <div class="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" value="enviar" class="btn btn-primary">Enviar</button>
                   </div>
                 </form>
 

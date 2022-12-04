@@ -55,3 +55,12 @@ function active(tag){
     }
        tag.style.color = "#fff";
     }
+
+
+
+    // Contador de digitos 
+
+    function contaTexto() {
+        const texto = document.form.mensagem.value;
+        document.getElementById('texto').innerText = texto.length; // texto.split(/\s+/).length  para contar palavras ou (/\n/) para linhas.
+      }

@@ -74,4 +74,10 @@ section#home div#deslize a:hover  {
 }
 
 
+.mensagem-div {
+    padding: 3em;
+    background-color: #021124;
+    justify-content: center;
+    display: none;
+}
 

@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mensagens de usuários</title>
 </head>
 <body>
+
+    <h1>Mensagens eviadas para contato.</h1>
+
+    <div id="lista-msg">
+        <button type="submit" value="listar">Listar mensagens</button>
+        
+        <span id="conteudo"></span>
+    </div>
+    
+    
+
+    <script>
+
+
+        const listaMsg = document.getElementById("lista-msg");
+
+        listaMsg.addEventListener("click", (event)=> {
+            console.log("clicou")
+            // var usuariosSalvos = localStorage.usuarios
+            var usuariosSalvos = JSON.parse(localStorage.getItem("usuarios"))
+            // var dados =JSON.parse(usuariosSalvos)
+            
+            console.log(usuariosSalvos)
+            console.log(usuariosSalvos[0].nome)
+            usuariosSalvos.forEach(element => {
+                console.log(element)
+                
+            });
+
+            // document.getElementById("conteudo").insertAdjacentHTML('beforeend', "Nome: " + dados[0].email)
+        })
+
+    </script>
     
 </body>
 </html>

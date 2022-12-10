@@ -81,3 +81,7 @@ section#home div#deslize a:hover  {
     display: none;
 }
 
+#btn-enviando, #msg-enviada {
+    display: none;
+}
+

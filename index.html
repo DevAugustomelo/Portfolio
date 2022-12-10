@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/componentes/imgs/favicon.ico" type="image/x-icon">
-    <script src="https://devaugustomelo.github.io/Portfolio/script.js"></script>
+    <!-- <script src="https://devaugustomelo.github.io/Portfolio/script.js"></script> -->
     
     <!-- bootstrap -->
     <link
@@ -410,16 +410,16 @@
                 <form class="row g-3" id="contato-forms" name="form">
                   <div class="col-md-6">
                     <label for="nome" class="form-label">Nome:</label><span id="alert" class="alert">  *Campo obrigatório</span>
-                    <input type="text" class="form-control" id="nome" name="nome">
+                    <input type="text" class="form-control" id="nome" name="nome" minlength="2" required>
                   </div>
                   <div class="col-md-6">
                     <label for="email" class="form-label">Email:</label><span id="alert" class="alert">  *Campo obrigatório</span>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <input type="email" class="form-control" id="email" name="email" minlength="9" required>
                   </div>
                   
                   <div class="col-12">
                     <label for="mensagem" class="form-label">Mensagem:</label> <span id="alert" class="alert">  *Campo obrigatório</span>
-                    <textarea  id="mensagem" cols="30" rows="10" type="text" class="form-control" maxlength="200" 
+                    <textarea  id="mensagem" cols="30" rows="10" type="text" class="form-control" maxlength="200" required
                     name="mensagem" oninput="contaTexto()"
                     placeholder="Digite aqui sua mensagem..."></textarea>
                   </div>
@@ -428,15 +428,27 @@
                     <label for="texto">Entrada máxima 200: </label> <span id="texto"></span>
                   </div>
                   <div class="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" value="enviar" class="btn btn-primary">Enviar</button>
+                    <button id="btn-enviar" type="submit" value="enviar" class="btn btn-primary">Enviar</button>
                   </div>
-                </form>
 
+                  <button id="btn-enviando" class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Enviando...
+                  </button>
+
+                </form>
+                
               </div>
             </div>
             
+            
           </div>
 
+        </div>
+
+        <div id="msg-enviada" class="alert alert-success alert-dismissible fade show" role="alert">
+          <i class="bi bi-check-circle-fill"></i><strong>      Mensagem enviada.</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
         <div class="d-flex justify-content-center mt-5">
@@ -577,7 +589,7 @@
 
     <script src="./componentes/templates.js"></script>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 
    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

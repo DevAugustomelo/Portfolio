@@ -56,10 +56,10 @@ function active(tag) {
 }
 
 
+// alert para campo não preenchido
 
 
-
-// Receber seletor contato
+// Receber seletor formulário de contato 
 
 const forms = document.getElementById('contato-forms');
 
@@ -69,7 +69,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 // listar mensagens ao carregar a página
 usuarios.forEach((element) => {
-  document.getElementById("listar-mensagem").insertAdjacentHTML('beforeend', "Nome: " + element.nome + "<br/>" + "Email: " + element.email + "<br/><br/>" + element.mensagem + "<hr/> <br/>")
+  document.getElementById("listar-mensagem").insertAdjacentHTML('beforeend', "<b>Nome:</b> " + element.nome + "<br/>" + "<b>Email:</b> " + element.email + "<br/><br/>" + element.mensagem + "<hr/> <br/>")
 })
 
 
@@ -123,6 +123,8 @@ forms.addEventListener("submit", (e) => {
 
   }, 8000)
 
+  forms.reset()
+
 
 })
 
@@ -149,10 +151,12 @@ btn.addEventListener('click', () => {
 
 var excluir = document.querySelector('#excluir-mensagens')
 
-excluir.addEventListener('click', (excluir) => {
-  // corfirm("Esta ação não pode ser desfeita. Deseja continuar?")
-  localStorage.clear()
+excluir.addEventListener('click', () => {
+  const resposta = window.confirm("Esta ação não poderá ser desfeita. Deseja continuar?");
+  if(resposta == true){
+    localStorage.clear()
+    location.reload()
+  }else{
 
-  location.reload()
-
+  }
 })

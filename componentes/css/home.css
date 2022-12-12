@@ -85,3 +85,7 @@ section#home div#deslize a:hover  {
     display: none;
 }
 
+.alert{
+    color: #f00;
+    display: none;
+}

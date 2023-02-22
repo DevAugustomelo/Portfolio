@@ -32,27 +32,14 @@ navItem.forEach(item => {
 })
 
 
-
-
-// Add active class to the current button (highlight it)
-// var header = document.getElementById("destacado");
-// var btns = header.getElementsByClassName("nav-link");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
-
+// Função para manter o item do menu ou navbar destacado dinamicamente. obs: usar onclick="active(this);". 
 
 function active(tag) {
-  var tag_li = document.getElementById('selected');
-  var tag_a = tag_li.getElementsByTagName('a');
-  for (var i = 0; i < tag_a.length; i++) {
-    tag_a[i].style.color = "";
+  var litag = document.getElementsByClassName('nav-item');
+  for ( i = 0; i < litag.length; i++) {
+    litag[i].classList.remove("active");
   }
-  tag.style.color = "#fff";
+  tag.classList.add("active")
 }
 
 
@@ -160,3 +147,13 @@ excluir.addEventListener('click', () => {
 
   }
 })
+
+
+function idade(dia, mes, ano) {
+  return new Date().getFullYear() - ano;
+
+}
+
+let idIdade = document.querySelector('#idade');
+
+  idIdade.innerHTML = idade(05,01,1986) + " anos";

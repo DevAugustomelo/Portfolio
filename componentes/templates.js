@@ -31,23 +31,23 @@ class MenuLateral extends HTMLElement {
   <nav id="nav-bar" class="nav-menu">
     <ul id="selected" class="nav flex-column" >
     
-      <li class="nav-item" >
-        <a class="nav-link" aria-current="page" href="#home" onclick="active(this);"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
+      <li class="nav-item active" onclick="active(this);">
+        <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house" aria-hidden="true"></i> Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#sobre" onclick="active(this);"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
+      <li class="nav-item" onclick="active(this);">
+        <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#formacao" onclick="active(this);"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>
+      <li class="nav-item" onclick="active(this);">
+        <a class="nav-link" href="#formacao"><i class="bi bi-mortarboard" aria-hidden="true"></i> Formação</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#curriculo" onclick="active(this);"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
+      <li class="nav-item" onclick="active(this);">
+        <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio" onclick="active(this);"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
+      <li class="nav-item" onclick="active(this);">
+        <a class="nav-link" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contato" onclick="active(this);"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
+      <li class="nav-item" onclick="active(this);">
+        <a class="nav-link" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
       </li>
     </ul>
   </nav>
